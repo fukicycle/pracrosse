@@ -39,6 +39,24 @@ h1:focus {
     box-sizing: border-box;
 }
 
+.loader-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    height: 180px;
+    width: 180px;
+}
+
+    .loader > img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
 html,
 body,
 main,
