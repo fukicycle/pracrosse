@@ -1,16 +1,21 @@
 {
-  "name": "pracrosse",
-  "short_name": "pracrosse",
+  "name": "ぷらくろす",
+  "short_name": "ぷらくろす",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#03173d",
+  "background_color": "#212121",
+  "theme_color": "#212121",
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-512.png",
-      "type": "image/png",
+      "src": "icon.svg",
+      "type": "image/svg+xml",
       "sizes": "512x512"
+    },
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
     }
   ]
 }

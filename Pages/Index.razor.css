@@ -1,0 +1,41 @@
+﻿.wrapper {
+ height: 100%;
+ display: grid;
+ grid-template-columns: auto;
+ grid-template-rows: minmax(0,1fr) auto minmax(0,1fr);
+ grid-gap: 8px;
+}
+
+.top {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+}
+
+.center {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+}
+
+.bottom {
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ align-items: center;
+}
+
+
+.img {
+ width: 120px;
+}
+
+.img > img {
+ object-fit: contain;
+ height: 100%;
+ width: 100%;
+}

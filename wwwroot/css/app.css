@@ -30,3 +30,79 @@ h1:focus {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/*ここからアプリ固有*/
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+main,
+#app {
+    height: 100%;
+    font-size: 16px;
+    background-color: #F9F9F9;
+    color: #333;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    touch-action: manipulation;
+    overflow: hidden;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 32px;
+    box-shadow: 0 0 8px rgba(33,33,33,.25);
+    background-color: #b60031;
+    color: #F2F2F2;
+    font-size: 1.2em;
+    min-width: 160px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+    .btn:active {
+        box-shadow: none;
+    }
+
+.h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+.h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.h4 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1em;
+}

@@ -1,3 +1,11 @@
 ﻿@page "/practice"
-
-<h1>Hello, world!</h1>
+@implements IDisposable
+<div class="display-area">
+    @foreach (string panel in _panels)
+    {
+        <div class="panel @panel"></div>
+    }
+</div>
+<div class="count-down">
+    @_displayCountDownValue
+</div>

@@ -1,0 +1,25 @@
+﻿.display-area {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-rows: repeat(3,minmax(0,1fr));
+}
+
+.panel {
+    background-color: #F9F9F9;
+}
+
+    .panel.active {
+        background-color: #b60031;
+    }
+
+.count-down {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
