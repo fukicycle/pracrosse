@@ -10,45 +10,42 @@ public partial class Practice
     private const string _activeClassName = "active";
     private int _displayCountDownValue = 5;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        base.OnInitialized();
+        await base.OnInitializedAsync();
         _timer.Elapsed += TimerTick;
         _timer.Start();
-        SetRandomPanel();
+        await SetRandomPanelAsync();
     }
 
-    private void SetRandomPanel()
+    private void InitailizeArray()
     {
-        int currentIdx = _panels.ToList().IndexOf(_activeClassName);
         for (int i = 0; i < _panels.Length; i++)
         {
             _panels[i] = "";
         }
-        _panels[GetRandomValue(currentIdx)] = _activeClassName;
+    }
+
+    private async Task SetRandomPanelAsync()
+    {
+        InitailizeArray();
+        _panels[_randomInstance.Next(0, _panels.Length - 1)] = _activeClassName;
+        StateHasChanged();
+        await Task.Delay(200);
+        InitailizeArray();
         StateHasChanged();
     }
 
-    private void TimerTick(object? sender, EventArgs e)
+    private async void TimerTick(object? sender, EventArgs e)
     {
         _countInSec++;
         if (_countInSec == _intervalInSec)
         {
-            SetRandomPanel();
+            await SetRandomPanelAsync();
             _countInSec = 0;
         }
         _displayCountDownValue = CountDown();
         StateHasChanged();
-    }
-
-    private int GetRandomValue(int currentIdx)
-    {
-        int random = _randomInstance.Next(0, _panels.Length - 1);
-        if (random == currentIdx)
-        {
-            return GetRandomValue(currentIdx);
-        }
-        return random;
     }
 
     private int CountDown()
