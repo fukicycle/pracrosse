@@ -1,5 +1,6 @@
 ﻿@page "/practice"
 @implements IDisposable
+@inject SettingService SettingService
 <div class="display-area">
     @foreach (string panel in _panels)
     {
@@ -7,5 +8,8 @@
     }
 </div>
 <div class="count-down h1">
-    @_displayCountDownValue
+    @if (_currentSetting.IsFixed)
+    {
+        @_displayCountDownValue
+    }
 </div>
