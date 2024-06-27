@@ -1,0 +1,43 @@
+﻿@page "/settings"
+@inject SettingService SettingService
+<div class="wrapper">
+    <div class="h1">各種設定</div>
+    <div class="h2">ボールの表示方法</div>
+    <div class="group">
+        <Microsoft.AspNetCore.Components.Forms.InputRadioGroup TValue="bool" @bind-Value="@_currentSetting.IsFixed">
+            <label>
+                <Microsoft.AspNetCore.Components.Forms.InputRadio TValue=bool Value="false" />
+                ランダム
+            </label>
+            <label>
+                <Microsoft.AspNetCore.Components.Forms.InputRadio TValue=bool Value="true" />
+                時間指定
+            </label>
+        </Microsoft.AspNetCore.Components.Forms.InputRadioGroup>
+    </div>
+    @if (_currentSetting.IsFixed)
+    {
+        <div>
+            <div class="h2">表示間隔</div>
+            <select @bind=@_currentSetting.Interval>
+                <option selected disabled value="-1">選択してください</option>
+                @foreach (int interval in Enumerable.Range(1, 10))
+                {
+                    <option value="@interval">@(interval)秒</option>
+                }
+            </select>
+        </div>
+    }
+    else
+    {
+        <div></div>
+    }
+    <div>@_msg</div>
+    <button class="btn" @onclick=@SaveAsync>保存</button>
+</div>
+@if (_isLoading)
+{
+    <div class="setting-loader-wrapper">
+        <div class="loader">設定保存中...</div>
+    </div>
+}

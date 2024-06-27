@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
+@inject SettingService SettingService
 <section class="wrapper">
     <div class="top">
         <p class="h1">ぷらくろす</p>
@@ -10,8 +11,14 @@
     <div class="center">
         <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("practice"))">練習開始</button>
         <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("how-to-use"))">使い方</button>
-        <button class="btn">設定</button>
+        <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("settings"))">設定</button>
     </div>
     <div class="bottom">
     </div>
 </section>
+@if (_isLoading)
+{
+    <div class="setting-loader-wrapper">
+        <div class="loader">設定読み込み中...</div>
+    </div>
+}
