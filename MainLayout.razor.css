@@ -19,3 +19,14 @@ button {
     border: none;
     background-color: transparent;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.version {
+    font-size: .8em;
+}

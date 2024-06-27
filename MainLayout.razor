@@ -1,7 +1,11 @@
 ﻿@inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
 <header>
-    <span class="h2">ぷらくろす</span>
+    <div class="title">
+        <span class="h2">ぷらくろす</span>
+        <span>-</span>
+        <span>v1.2</span>
+    </div>
     <button @onclick=@(() => NavigationManager.NavigateTo(""))>
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.5737 2.07562C15.4074 1.94593 15.2025 1.8755 14.9916 1.8755C14.7806 1.8755 14.5757 1.94593 14.4094 2.07562L0.9375 12.5803L2.10281 14.0541L3.75 12.7697V24.375C3.75099 24.872 3.94885 25.3483 4.30027 25.6997C4.65169 26.0511 5.12802 26.249 5.625 26.25H24.375C24.872 26.249 25.3483 26.0511 25.6997 25.6997C26.0511 25.3483 26.249 24.872 26.25 24.375V12.7781L27.8972 14.0625L29.0625 12.5888L15.5737 2.07562ZM16.875 24.375H13.125V16.875H16.875V24.375ZM18.75 24.375V16.875C18.75 16.3777 18.5525 15.9008 18.2008 15.5492C17.8492 15.1975 17.3723 15 16.875 15H13.125C12.6277 15 12.1508 15.1975 11.7992 15.5492C11.4475 15.9008 11.25 16.3777 11.25 16.875V24.375H5.625V11.3081L15 4.005L24.375 11.3175V24.375H18.75Z" fill="#F2F2F2" />
@@ -12,7 +16,7 @@
     @Body
 </main>
 <footer>
-    &copy; 2024 kotli-sharp v1.1
+    <div>&copy; 2024 kotli-sharp</div>
 </footer>
 
 <Toolbelt.Blazor.PWA.Updater.PWAUpdater Text="新しいバージョンがあります。" ButtonCaption="更新する！" />
