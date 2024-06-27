@@ -1,0 +1,27 @@
+﻿.wrapper {
+    overflow: auto;
+    height: 100%;
+    padding: 4px;
+    scroll-behavior: smooth;
+}
+
+.h2 {
+    border-bottom: solid 4px #b60031;
+    padding-top: 8px;
+}
+
+p {
+    padding: 0 4px;
+}
+
+ul, ol {
+    padding: 4px 32px;
+}
+
+a {
+    color: #b60031;
+}
+
+.index > li {
+    padding: 4px;
+}
