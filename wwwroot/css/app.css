@@ -76,6 +76,9 @@ main,
     font-style: normal;
     touch-action: manipulation;
     overflow: hidden;
+}
+
+body {
     padding-bottom: env(safe-area-inset-bottom);
 }
 
