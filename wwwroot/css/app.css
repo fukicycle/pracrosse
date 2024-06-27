@@ -71,6 +71,7 @@ main,
     font-style: normal;
     touch-action: manipulation;
     overflow: hidden;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .btn {

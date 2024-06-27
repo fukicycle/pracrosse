@@ -2,7 +2,7 @@
   "name": "ぷらくろす",
   "short_name": "ぷらくろす",
   "start_url": "./",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#F9F9F9",
   "theme_color": "#F9F9F9",
   "prefer_related_applications": false,
@@ -11,6 +11,33 @@
       "src": "icon.png",
       "type": "image/png",
       "sizes": "512x512"
+    }
+  ],
+  "description": "ラクロスの練習をサポートするアプリ",
+  "screenshots": [
+    {
+      "src": "/imgs/main_screen.png",
+      "type": "image/png",
+      "sizes": "622x1090",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/imgs/practice_screen.png",
+      "type": "image/png",
+      "sizes": "623x1088",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/imgs/main_screen.png",
+      "type": "image/png",
+      "sizes": "622x1090",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/imgs/practice_screen.png",
+      "type": "image/png",
+      "sizes": "623x1088",
+      "form_factor": "wide"
     }
   ]
 }
