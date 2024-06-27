@@ -1,0 +1,21 @@
+﻿header {
+    width: 100%;
+    height: 100%;
+    background-color: #b60031;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+footer {
+    text-align: center;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
