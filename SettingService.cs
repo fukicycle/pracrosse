@@ -20,7 +20,7 @@ namespace pracrosse
             {
                 tmpSettingItem = new SettingItem();
                 tmpSettingItem.Interval = 5;
-                tmpSettingItem.IsFixed = false;
+                tmpSettingItem.IsFixed = true;
             }
             _settingItem = tmpSettingItem;
         }
