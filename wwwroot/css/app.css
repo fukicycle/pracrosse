@@ -74,6 +74,16 @@ main,
     padding-bottom: env(safe-area-inset-bottom);
 }
 
+footer {
+    text-align: center;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(0,1fr) auto;
+}
+
 .btn {
     outline: none;
     border: none;

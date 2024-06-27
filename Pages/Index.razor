@@ -1,20 +1,17 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 <section class="wrapper">
-<div class="top">
-<p class="h1">ぷらくろす</p>
- <div class="img">
-  <img src="imgs/lacrosse.png" alt="ラクロスの写真"/>
- </div>
-</div>
-<div class="center">
- <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("practice"))">練習開始</button>
- <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("how-to-use"))">使い方</button>
- <button class="btn">設定</button>
-</div>
-<div class="bottom">
- <footer>
-  <span>&copy; 2024 kotli-sharp</span>
- </footer>
-</div>
+    <div class="top">
+        <p class="h1">ぷらくろす</p>
+        <div class="img">
+            <img src="imgs/lacrosse.png" alt="ラクロスの写真" />
+        </div>
+    </div>
+    <div class="center">
+        <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("practice"))">練習開始</button>
+        <button class="btn" @onclick="@(() => NavigationManager.NavigateTo("how-to-use"))">使い方</button>
+        <button class="btn">設定</button>
+    </div>
+    <div class="bottom">
+    </div>
 </section>
