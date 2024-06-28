@@ -74,7 +74,7 @@ main,
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    touch-action: manipulation;
+    touch-action: none!important;
     overflow: hidden;
 }
 
