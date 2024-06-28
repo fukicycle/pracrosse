@@ -1,0 +1,187 @@
+@import '_content/Toolbelt.Blazor.PWA.Updater/Toolbelt.Blazor.PWA.Updater.bundle.scp.css';
+
+/* /MainLayout.razor.rz.scp.css */
+header[b-xjhe9q9osd] {
+    width: 100%;
+    height: 100%;
+    background-color: #b60031;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+footer[b-xjhe9q9osd] {
+    text-align: center;
+}
+
+button[b-xjhe9q9osd] {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.title[b-xjhe9q9osd] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.version[b-xjhe9q9osd] {
+    font-size: .8em;
+}
+/* /Pages/HowToUse.razor.rz.scp.css */
+.wrapper[b-gpsevfc7tc] {
+    overflow: auto;
+    height: 100%;
+    padding: 4px;
+    scroll-behavior: smooth;
+}
+
+.h2[b-gpsevfc7tc] {
+    border-bottom: solid 4px #b60031;
+    padding-top: 8px;
+}
+
+p[b-gpsevfc7tc] {
+    padding: 0 4px;
+}
+
+ul[b-gpsevfc7tc], ol[b-gpsevfc7tc] {
+    padding: 4px 32px;
+}
+
+a[b-gpsevfc7tc] {
+    color: #b60031;
+}
+
+.index > li[b-gpsevfc7tc] {
+    padding: 4px;
+}
+/* /Pages/Index.razor.rz.scp.css */
+.wrapper[b-4w3t9n7y7y] {
+ height: 100%;
+ display: grid;
+ grid-template-columns: auto;
+ grid-template-rows: minmax(0,1fr) auto minmax(0,1fr);
+ grid-gap: 8px;
+}
+
+.top[b-4w3t9n7y7y] {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+}
+
+.center[b-4w3t9n7y7y] {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 8px;
+}
+
+.bottom[b-4w3t9n7y7y] {
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ align-items: center;
+}
+
+
+.img[b-4w3t9n7y7y] {
+ width: 120px;
+}
+
+.img > img[b-4w3t9n7y7y] {
+ object-fit: contain;
+ height: 100%;
+ width: 100%;
+}
+
+.setting-loader-wrapper[b-4w3t9n7y7y] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 240, 240,.7);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /Pages/Practice.razor.rz.scp.css */
+.display-area[b-4ng0ypr14n] {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-rows: repeat(3,minmax(0,1fr));
+}
+
+.panel[b-4ng0ypr14n] {
+    background-color: #F9F9F9;
+}
+
+    .panel.active[b-4ng0ypr14n] {
+        background-color: #b60031;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+.count-down[b-4ng0ypr14n] {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /Pages/Setting.razor.rz.scp.css */
+.wrapper[b-8yachy7qt8] {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,auto) minmax(0,1fr) auto;
+    padding: 4px;
+    height: 100%;
+}
+
+.group[b-8yachy7qt8] {
+    padding: 4px;
+}
+
+[b-8yachy7qt8] input[type=radio] {
+    padding: 4px;
+}
+
+select[b-8yachy7qt8] {
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 4px;
+    border: solid 2px #b60031;
+    box-shadow: 0 0 4px rgba(33,33,33,.25);
+}
+
+.setting-loader-wrapper[b-8yachy7qt8] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 240, 240,.7);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
